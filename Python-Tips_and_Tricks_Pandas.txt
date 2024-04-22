@@ -1,0 +1,23 @@
+# Tips and Tricks for Pandas
+
+## Functions
+
+### df.describe()
+
+### df.nunique()
+
+### df.value_counts()
+
+### df.query()
+Use df.query() to subset/filter a dataframe as an alternative to e.g. df.loc[df[col] == "val"]
+A benefit is that you can write the column name directly, without referencing the
+dataframe itself. The query string can also include local variables, without having to
+be an f-string, rather they can be referenced using '@' in front of the variable name.
+
+
+### df.groupby()
+Group the data in the specified columns.
+
+
+### df.groupby().agg()
+Aggregate on the specified columns.
