@@ -21,3 +21,23 @@ Group the data in the specified columns.
 
 ### df.groupby().agg()
 Aggregate on the specified columns.
+
+
+### .isin()
+Check if column values are in a specific list. E.g. df.loc[df['a'].isin(['good1', 'good2'])]
+
+
+### .isna()
+Check if column values are NA/NaN.
+
+
+### .notnull()
+Check if column values are NOT NA/NaN.
+
+
+### .astype()
+Can be used to limit the memory use 
+
+
+### df.assign()
+
