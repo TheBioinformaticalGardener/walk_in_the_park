@@ -1,0 +1,28 @@
+# Tips and Tricks in core Python
+
+## Functions
+
+### Dictionaries
+#### .setdefault()
+Assign default value to the specified key if the key is not currently in the dictionary.
+E.g.: 
+d = {}
+d.setdefault('list1', [])
+d['list1']   # []
+d.setdefault('list1', []).append(True)
+d['list1']   # [True]
+d.setdefault('list2', []).append(False)
+d['list2']   # [False]
+
+
+### Loops
+
+#### Else in While loop
+The else block will execute when/if the while condition is false. I.e. this can be an 
+alternative to using flag variables. 
+
+
+### If-Else
+
+#### Ternary operator
+One-line if-else statements. variable = alternative_1 if ... else (alternative_2 if ... else alternative_3)  
